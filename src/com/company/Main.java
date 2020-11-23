@@ -25,8 +25,8 @@ public class Main {
         Circle cir4 = new Circle(cir1);
         System.out.println("Circle 4:\n" + cir4);
 
-        // tests overlap and toString methods
-        System.out.println("Do the following circles overlap?");
+        // tests overlap, equals and toString methods
+        System.out.println("Do the following circles overlap or are equal to each other?");
         System.out.println(cir2.toString());
         System.out.println(cir3.toString());
 
@@ -34,6 +34,26 @@ public class Main {
             System.out.println("Yes, they overlap!");
         } else {
             System.out.println("No, they do not overlap!");
+        }
+
+        if (cir2.equals(cir3)) {
+            System.out.println("Yes, they are equal!");
+        } else {
+            System.out.println("No, they are not equal!");
+        }
+
+        System.out.println();
+
+        // tests equals and toString methods
+
+        System.out.println("Are the following circles equal to each other?");
+        System.out.println(cir1.toString());
+        System.out.println(cir4.toString());
+
+        if (cir1.equals(cir4)) {
+            System.out.println("Yes, they are equal!");
+        } else {
+            System.out.println("No, they are not equal!");
         }
     }
 }
@@ -55,7 +75,7 @@ Circle 4:
 (0.0, 0.0)
 radius: 1.0
 
-Do the following circles overlap?
+Do the following circles overlap or are equal to each other?
 (1.0, 1.0)
 radius: 2.0
 
@@ -63,6 +83,16 @@ radius: 2.0
 radius: 1.0
 
 Yes, they overlap!
+No, they are not equal!
+
+Are the following circles equal to each other?
+(0.0, 0.0)
+radius: 1.0
+
+(0.0, 0.0)
+radius: 1.0
+
+Yes, they are equal!
 
 Process finished with exit code 0
  */
