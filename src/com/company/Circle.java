@@ -72,7 +72,7 @@ public class Circle {
      */
 
     public void setCenter(Point p) {
-        center = p;
+        center = new Point(p);
     }
 
 
